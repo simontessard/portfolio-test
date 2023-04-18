@@ -11,17 +11,13 @@ function NavItem(props) {
 function Header() {
   return (
     <header className="Portfolio-header">
-      <nav className="flex flex-row sm:justify-between space-x-4 p-5 flex-wrap">
+      <nav className="flex flex-row sm:justify-center space-x-4 p-5 flex-wrap">
         <div></div>
         <ul className='flex'>
           <NavItem title="À propos" url="/about"/>
           <NavItem title="Compétences" url="/skills"/>
           <NavItem title="Projets" url="/projects"/>
           <NavItem title="Contact" url="/contact"/>
-        </ul>
-        <ul className="flex space-x-5 text-dark">
-          <GrLanguage className='cursor-pointer text-xl hover:text-blue-900 delay-100 duration-300'/>
-          <BsFillMoonStarsFill className='cursor-pointer text-xl hover:text-blue-900 delay-100 duration-300'/>
         </ul>
       </nav>
     </header>

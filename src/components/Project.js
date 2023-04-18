@@ -3,31 +3,6 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BiShow } from 'react-icons/bi';
 import './Default.css';
 
-function ShowSkills(props) {
-    if (props.id % 2 === 0) {
-        return (
-            <div className="text-4xl absolute right-1 opacity-0 xl:group-hover:opacity-100 xl:group-hover:translate-x-10 xl:group-hover:text-black xl:group-hover:bg-white xl:group-hover:border-4 duration-500 delay-100 bg-blue-900 text-blue-900 p-2 rounded-lg">
-                <h1>{props.id}</h1>
-                <AiFillGithub className='mb-3' />
-                <BiShow className='mb-3' />
-                <AiFillGithub className='mb-3' />
-                <BiShow className='mb-3' />
-            </div>
-        );
-    }
-    else {
-        return (
-            <div className="text-4xl absolute left-1 opacity-0 xl:group-hover:opacity-100 xl:group-hover:-translate-x-10 xl:group-hover:text-black xl:group-hover:bg-white xl:group-hover:border-4 duration-500 delay-100 bg-blue-900 text-blue-900 p-2 rounded-lg">
-                <h1>{props.id}</h1>
-                <AiFillGithub className='mb-3' />
-                <BiShow className='mb-3' />
-                <AiFillGithub className='mb-3' />
-                <BiShow className='mb-3' />
-            </div>
-        );
-    }
-}
-
 function OneProject(props) {
     return (
         <div className="flex flex-col min-w-full lg:min-w-0 basis-100 lg:basis-1/3 h-80 shadow-lg shadow-[#040c16a1] justify-center text-center bg-cover rounded-xl" key={props.index}
@@ -37,18 +12,17 @@ function OneProject(props) {
                 <div className="flex flex-row gap-10">
                     <button className="bg-white hover:bg-black text-black hover:text-white hover:scale-125 delay-100 duration-300 mt-10 w-fit  group px-6 py-3 rounded flex items-center">
                         Code
-                        <span className='group-hover:scale-125 delay-100 duration-300'>
+                        <span className='group-hover:scale-125 delay-50 duration-300'>
                             <AiFillGithub className='ml-3 text-xl' />
                         </span>
                     </button>
                     <button className="bg-white hover:bg-black text-black hover:text-white hover:scale-125 delay-100 duration-300 mt-10 w-fit group px-6 py-3 rounded flex items-center">
                         Détails
-                        <span className='group-hover:scale-125 delay-100 duration-300'>
+                        <span className='group-hover:scale-125 delay-50 duration-300'>
                             <BiShow className='ml-3 text-xl' />
                         </span>
                     </button>
                 </div>
-                <ShowSkills id={props.id} />
             </div>
         </div>
     );
