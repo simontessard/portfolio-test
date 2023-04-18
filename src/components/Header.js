@@ -1,6 +1,4 @@
 import './Default.css';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { GrLanguage } from 'react-icons/gr';
 
 function NavItem(props) {
   return (
