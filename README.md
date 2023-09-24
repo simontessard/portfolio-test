@@ -6,7 +6,7 @@ Ce projet a été créé avec [Create React App](https://github.com/facebook/cre
 
 Dans le répertoire du projet, vous pouvez exécuter :
 
-### `npm start`
+### `npm install`
 
 Pour installer les dépendances du projet assurant son bon fonctionnement.
 
