@@ -39,7 +39,7 @@ function Skills() {
     return (
         <section className="flex flex-row gap-20 flex-wrap justify-center py-10 bg-gradient-to-l from-gray-900 via-blue-800 to-blue-900 text-white items-center">
             {skills.map((item, index) => (
-                <Skill name={item.name} index={index} />
+                <Skill name={item.name} index={index} key={index}/>
             ))}
         </section>
     );
